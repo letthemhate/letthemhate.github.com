@@ -8,7 +8,7 @@
 <body>
 <div id="yourbunnywrote">#letthemhate<span class="heart"></span></div>
 <canvas id="q">your browser sucks! =(</canvas>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="/js/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(document).ready(function(){function a(){"undefined"!=typeof Game_Interval&&clearInterval(Game_Interval),Game_Interval=setInterval(g,33)}function b(){clearInterval(Game_Interval)}var c=q.width=screen.width,d=q.height=screen.height,e=Array(1e3).join(0).split(""),f=q.getContext("2d"),g=function(){f.fillStyle="rgba(255, 255, 255, 0.1)",f.fillRect(0,0,c,d),f.fillStyle="#FF0042",f.font="10pt Georgia",e.map(function(a,b){text=String.fromCharCode(100+33*Math.random()),x=10*b+10,q.getContext("2d").fillText(text,x,a),e[b]=a>1e3+1e4*Math.random()?0:a+10})};a(),$("button#pause").click(function(){b()}),$("button#play").click(function(){a()})});
 </script>
